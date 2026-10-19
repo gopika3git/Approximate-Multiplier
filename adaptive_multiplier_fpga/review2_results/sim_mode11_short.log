@@ -1,0 +1,14 @@
+VCD info: dumpfile build/mode11_cosim.vcd opened for output.
+
+=== Mode-11 co-simulation: ADAPTIVE (CAL_PERIOD=20, EMA 1/8, steer-to 2.00%) vs STATIC (no calibration) ===
+ops per phase = 100, req_width = 15, NMED budget = 2.0%, window = 64 ops
+phase          | breaches AD | breaches ST | mean NMED AD | mean NMED ST | avg width AD | avg width ST | avg drift AD | cal samples
+0 uniform      |           8 |           8 |       1.856% |       1.856% |        10.00 |        10.00 |        0.951 |           4
+1 biased high  |          22 |         100 |       1.315% |       2.316% |         9.12 |        10.00 |        1.284 |           5
+2 biased low   |           0 |          34 |       0.787% |       1.207% |         9.20 |        10.00 |        1.184 |           6
+TOTAL          |    30/300 |   142/300 |
+worst windowed NMED: ADAPTIVE 0.0210   STATIC 0.0242
+Trace written to results/supervisor_rtl_trace.csv
+SUMMARY,20,3,20000,1,100,8,8,0.018557,0.018557,10.0000,10.0000,22,100,0.013148,0.023158,9.1200,10.0000,0,34,0.007869,0.012073,9.2000,10.0000,0.020959,0.024151
+CO-SIM DONE
+tb/tb_mode11_supervisor.v:217: $finish called at 3080000 (1ps)

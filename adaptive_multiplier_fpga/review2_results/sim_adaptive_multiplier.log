@@ -1,0 +1,25 @@
+VCD info: dumpfile build/adaptive_multiplier.vcd opened for output.
+[Test 1] mode 00 exhaustive      : 65536 ops checked, 0 errors
+          Pth : width(mode01)  width(mode10)
+            0 :      8              8
+            1 :      8              6
+            2 :      7              4
+            3 :      7              2
+            4 :      6              0
+            5 :      6              0
+            6 :      5              0
+            7 :      5              0
+            8 :      4              0
+            9 :      4              0
+           10 :      3              0
+           11 :      3              0
+           12 :      2              0
+           13 :      2              0
+           14 :      1              0
+           15 :      1              0
+[Test 2] mode 01, Pth 0..15      : 32768 ops checked, 0 errors
+[Test 3] mode 10, Pth 0..15      : 32768 ops checked, 0 errors
+[Test 4] mode 11 (supervisor)    : 4000 ops checked, 0 errors, final width=10, drift=166/256
+[Test 5] random mode switching   : 4000 ops checked, 0 errors
+PASS: adaptive_multiplier, all 139072 checks passed.
+tb/tb_adaptive_multiplier.v:215: $finish called at 1390950000 (1ps)

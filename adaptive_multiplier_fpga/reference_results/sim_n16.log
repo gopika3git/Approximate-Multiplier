@@ -1,0 +1,4 @@
+  uniform    : mean width 25.68, drift 0.809x, mean NMED 1.752%
+  biased high: mean width 25.01, drift 1.285x, mean NMED 1.595%
+PASS: N=16 products match reference, phase-mean NMED within 2%
+tb_n16_smoke.v:80: $finish called at 60070000 (1ps)
